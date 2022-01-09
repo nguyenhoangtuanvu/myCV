@@ -1,0 +1,214 @@
+.container {
+    width: 1170px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.navigation {
+    margin-top: 186px;
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    left: -44%;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+}
+.nav-list-items {
+    display: block;
+    color: var(--primary-color-blu);
+    margin-bottom: 7px;
+    min-width: 160px;
+    height: 35px;
+}
+.nav-items__link {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--text-white-color);
+    background-color: var(--primary-color-blu);
+    padding: 10px 10px 10px 15px;
+}
+.content-wrap {
+    position: relative;
+}
+.content {
+    width: 470px;
+    min-height: 540px;
+    margin: 180px 0 20px;
+    padding: 45px 45px 20px 45px;
+    border-top: 6px solid #7d6e6b;
+    border-bottom: 15px solid #f4f4f4;
+    background: url(../img/bg-card2.png) repeat-x right top #f4f4f4;
+}
+.cnt--detail {
+    left: -165px;
+}
+.avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 33px;
+}
+.avatar > img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #d4d2d2;
+    border-radius: 50%;
+    display: none;
+}
+#myprofile1 {
+    color: #7d6e6b;
+}
+img.avtActive {
+    display: block;
+}
+.profile-desciption {
+    text-align: center;
+    color: #afadac;
+}
+.profile-title {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.profile-title > span {
+    color: var(--primary-color-blu);
+}
+.profile-desciption h2 {
+    margin:0 0 20px 0;
+}
+.profile-desciption hr {
+    margin: 10px;
+}
+.profile-desciption-text {
+    padding: 10px;
+}
+.profile-desciption-text > p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.profile-desciption-feature {
+    width: 100%;
+    height: 37px;
+    background-color: var(--primary-color-blu);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.profile-desciption-feature  p {
+    color: white;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    align-items: center;
+    margin: 0;
+}
+.profile-desciption-feature__link {
+    text-decoration: none;
+}
+.footer-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+.footer-items {
+    margin: 0 3px;
+}
+.footer-icon__link {
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-color: black;
+    display: flex;
+    text-decoration: none;
+
+}
+.footer-icon__link i {
+    color: white;
+    font-size: 1.35rem;
+    margin: auto;
+}
+/* content-detail */
+.content-detail {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 470px;
+    height: 545px;
+    margin: 180px 0 20px;
+    padding: 45px 45px 20px 45px;
+    border-top: 6px solid #7d6e6b;
+    border-bottom: 15px solid #f4f4f4;
+    background: url(../img/bg-card2.png) repeat-x right top #f4f4f4;
+    display: none;
+}
+.active {
+    display: block;
+}
+.content-detail-resume-wrap {
+    /* display: none; */
+    overflow-y: scroll;
+    overflow: hidden;
+}
+content-detail-skills-wrap
+content-detail-portfolio-wrap
+content-detail-contact-wrap
+.resume-title {
+    font-size: 1.6rem;
+}
+.resume-topic {
+    color: var(--primary-color-blu);
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-left: 4px solid var(--primary-color-blu);
+    padding: 5px 0 5px 15px;
+    margin: 20px 0 10px;
+}
+.resume-title__icon {
+    font-size: 1.8rem;
+}
+.resume-content {
+    padding: 15px;
+    border: 4px double #ccc;
+    margin-bottom: 15px;
+}
+.resume-content__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+.resume-content__Subtitles {
+    font-style: italic;
+    color: #555;
+    font-weight: 400;
+    margin: 5px 0 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.resume-content__description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.list-content {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.resume-content > span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}

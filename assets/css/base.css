@@ -1,0 +1,30 @@
+:root {
+    --primary-color-blu: #08aeac;
+    --primary-color-black: #021533;
+    --primary-color-red: #b31f27;
+    --text-color: #021533;
+    --text-white-color: white;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 65.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+/* responsive */
+.grid {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    margin: 0 auto;
+    background: url(../img/bg1.jpg) no-repeat; 
+    /* -webkit-font-smoothing: subpixel-antialiased; */
+}
