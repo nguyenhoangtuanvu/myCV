@@ -164,10 +164,18 @@ img.avtActive {
     display: none;
 }
 .content-detail-skills-wrap {
-    /* display: none; */
+    display: none;
 }
-content-detail-portfolio-wrap
-content-detail-contact-wrap
+/* MENU */
+.content-detail-portfolio-wrap {
+    display: none;
+}
+.content-detail-contact-wrap {
+    display: none;
+}
+.active-content {
+    display: block;
+}
 .resume-title,
 .skills-title {
     font-size: 1.6rem;
