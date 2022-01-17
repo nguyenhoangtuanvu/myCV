@@ -23,8 +23,10 @@ body {
 .grid {
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     padding-top: 0;
     margin: 0 auto;
-    background: url(../img/bg1.jpg) no-repeat; 
-    /* -webkit-font-smoothing: subpixel-antialiased; */
+    background: url(../img/bg1.jpg) no-repeat center center fixed; 
+    background-size: cover;
 }
