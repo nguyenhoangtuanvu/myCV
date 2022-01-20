@@ -168,7 +168,7 @@ img.avtActive {
 }
 /* MENU */
 .content-detail-portfolio-wrap {
-    /* display: none; */
+    display: none;
 }
 .content-detail-contact-wrap {
     display: none;
@@ -308,10 +308,10 @@ img.avtActive {
     overflow: hidden;
     border-radius: 4px;
 }
+.portfolio-item-img {
+    width: 100%;
+}
 .project-thumbnail {
-    background-image: url(../img/bgr1.jpg);
-    background-size: cover;
-    background-position: center center;
     height: 250px;
     padding: 15px;
     text-align: center;
@@ -350,5 +350,5 @@ img.avtActive {
     margin: 10px auto;
 }
 .see-more {
-
+    
 }
