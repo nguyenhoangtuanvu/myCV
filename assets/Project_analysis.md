@@ -84,6 +84,7 @@ body {
   display: none;
 }
 
+
 .cursor {
   cursor: pointer;
 }
@@ -177,7 +178,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function currentSlide(n) {
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
