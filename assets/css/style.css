@@ -420,10 +420,28 @@ img.avtActive {
 }
 .project-detail-img {
     width: 100%;
+    margin-bottom: 30px;
+}
+.portfolio-project__link {
+    display: block; 
+    text-decoration: none;
+    width: 20%;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-blu);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
 }
 .portfolio-project-description {
 
 }
+
 .prev {
     background-image: url(../img/prev.png);
     background-size: 50px 70px;
