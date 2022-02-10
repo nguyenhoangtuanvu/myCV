@@ -38,7 +38,7 @@
     top: 0;
     left: 0;
     transition: left .6s ease-in-out;
-    z-index: 2;
+    z-index: 1;
 }
 .content {
     width: 470px;
