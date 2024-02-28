@@ -99,7 +99,12 @@ var nextBtn = document.querySelector('.next-btn');
 for(var btn of getOpenModelBtn) {
     btn.addEventListener('click',openPortfolioOverlay);
 }
-getCloseModelBtn.addEventListener('click',closePortfolioOverlay);
+getCloseModelBtn.onclick = function() {
+    closePortfolioOverlay();
+    imgIndex = 0;
+
+}
+        
 
 // testimonial open overlay
 for(var btn of testimonialsBtn) {
@@ -254,7 +259,7 @@ function changeIndex(number) {
 }
 
 function showImg(image) {
-    console.log("image:", image)
+    console.log("imgIndex:", imgIndex)
     var project = document.querySelector('.poftfolio__img-main');
     project.querySelector('img').src = image;
 }
