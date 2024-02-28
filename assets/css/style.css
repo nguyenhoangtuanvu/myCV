@@ -212,7 +212,7 @@ img.avtActive {
 .resume-content {
     padding: 15px;
     border: 4px double #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .resume-content__title {
     font-size: 1.5rem;
@@ -241,12 +241,26 @@ img.avtActive {
     font-size: 1.2rem;
     font-weight: 400;
 }
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-img-col-5 {
+    display: flex;
+    margin: auto;
+    width: 48%;
+    height: 270px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
 .testimonials-img {
     display: flex;
     margin: auto;
     width: 300px;
     height: 400px;
     padding-bottom: 10px;
+    margin-bottom: 40px;
 }
 .ressume-footer {
     padding-top: 10px;
@@ -434,11 +448,11 @@ img.avtActive {
     position: relative;
 }
 .poftfolio__img-main  {
-
+    
 }
 .project-detail-img {
-    width: 100%;
-    max-height: 600px;
+    max-width: 100%;
+    max-height: 80vh;
     margin-bottom: 30px;
 }
 .portfolio-project__link {

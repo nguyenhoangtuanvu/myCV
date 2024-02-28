@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>HoangVu CV</title>
 </head>
 <body>
@@ -120,12 +121,11 @@
                     </h2>
 
                     <div class="resume-content">
-                        <h3 class="resume-content__title">Nhân Viên Family Mart</h3>
-                        <h4 class="resume-content__Subtitles">Cửa Hàng family mart Số 14 (2/2021-10/2021)</h4>
+                        <h3 class="resume-content__title">CTY TIN HỌC ĐẠI DƯƠNG</h3>
+                        <h4 class="resume-content__Subtitles">giáo viên tin học (10/2022-9/2023)</h4>
                         <p class="resume-content__description">
-                            Nhân viên bán hàng - Giới thiệu, tư vấn sản phẩm, giải đáp các vấn đề thắc mắc của khách hàng. <br>
-                            - Đảm bảo vệ sinh trong khu vực cửa hàng. <br>
-                            - Nhận và kiểm kê hàng hóa nhập kho.
+                            - giảng dạy tại các trường được phân công<br>
+                            - giảng dạy các kiến thức về khóa học tin học IC3 cho học sinh trung học cơ sở
                         </p>
                     </div>
                     <div class="resume-content">
@@ -136,16 +136,45 @@
                             - sản phẩm là 2 ứng dụng web: app kế toán và app marketing
                         </p>
                     </div>
+                    <div class="resume-content">
+                        <h3 class="resume-content__title">Nhân Viên Family Mart</h3>
+                        <h4 class="resume-content__Subtitles">Cửa Hàng family mart Số 14 (2/2021-10/2021)</h4>
+                        <p class="resume-content__description">
+                            Nhân viên bán hàng - Giới thiệu, tư vấn sản phẩm, giải đáp các vấn đề thắc mắc của khách hàng. <br>
+                            - Đảm bảo vệ sinh trong khu vực cửa hàng. <br>
+                            - Nhận và kiểm kê hàng hóa nhập kho.
+                        </p>
+                    </div>
 
                     <h2 class="resume-topic">   
                         <i class="fas fa-flag resume-title__icon"></i>
                         Testimonials
                     </h2>
                     <div class="resume-content">
-                       <p class="resume-content__description"> giấy chứng nhận tạm thời xác nhận hoàn thành chương trình học tại trường cao đẳng quốc tế anh quốc BTEC-FPT</p>
+                       <p class="resume-content__description"> bằng tốt nghiệp trường cao đẳng quốc tế anh quốc BTEC-FPT</p>
                     </div>
                     <div class="testimonials">
-                        <img src="./assets/img/testimonials.jpg" alt="" class="testimonials-img">
+                        <img src="./assets/img/bằng cao đẳng.jpg" alt="" id="element" class="testimonials-img-col-5" onclick="Project('bangTotNghiep')">
+                        <img src="./assets/img/bằng cao đẳng2.jpg" alt="" class="testimonials-img-col-5" onclick="Project('bangTotNghiep')">
+                    </div>
+                    <div class="resume-content">
+                       <p class="resume-content__description"> chứng chỉ tiếng anh level 5 của FPT</p>
+                    </div>
+                    <div class="testimonials">
+                        <img src="./assets/img/chứng chỉ inglish.jpg" alt="" class="testimonials-img-col-5" onclick="Project('english')">
+                        <img src="./assets/img/chứng chỉ inglish2.jpg" alt="" class="testimonials-img-col-5" onclick="Project('english')">
+                    </div>
+                    <div class="resume-content">
+                       <p class="resume-content__description"> chứng chỉ tin học văn phòng IC3 Key Applications  Global Standard 5</p>
+                    </div>
+                    <div class="testimonials">
+                        <img src="./assets/img/IC3 Key Applications  Global Standard 5.png" alt="" class="testimonials-img" onclick="Project('ic3CF')">
+                    </div>
+                    <div class="resume-content">
+                       <p class="resume-content__description"> chứng chỉ tin học văn phòng IC3 Computing Fundamentals  Global Standard 5</p>
+                    </div>
+                    <div class="testimonials">
+                        <img src="./assets/img/IC3 Computing Fundamentals  Global Standard 5.png" alt="" class="testimonials-img" onclick="Project('ic3KA')">
                     </div>
                     <p class="ressume-footer">
                         "The best way to predict the future is to create it" 
@@ -219,14 +248,21 @@
                         <li class="skills-items">
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" data-percent="70%" style="width:70%"></div>
-                                <span class="progress-style">Html</span>
+                                <span class="progress-style">Html 5</span>
                                 <span class="progress-completed">70%</span>
                             </div>
                         </li>
                         <li class="skills-items">
                             <div class="progress">
                                 <div class="progress-bar progress-bar2" role="progressbar" data-percent="70%" style="width:70%"></div>
-                                <span class="progress-style">CSS</span>
+                                <span class="progress-style">CSS 3</span>
+                                <span class="progress-completed">70%</span>
+                            </div>
+                        </li>
+                        <li class="skills-items">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar2" role="progressbar" data-percent="70%" style="width:70%"></div>
+                                <span class="progress-style">Jquery</span>
                                 <span class="progress-completed">70%</span>
                             </div>
                         </li>
@@ -234,23 +270,31 @@
                             <div class="progress">
                                 <div class="progress-bar progress-bar3" role="progressbar" data-percent="50%" style="width:50%"></div>
                                 <span class="progress-style">JavaScript</span>
-                                <span class="progress-completed">50%</span>
+                                <span class="progress-completed">80%</span>
                             </div>
                         </li>
                         <li class="skills-items">
                             <div class="progress">
                                 <div class="progress-bar progress-bar3" role="progressbar" data-percent="75%" style="width:75%"></div>
                                 <span class="progress-style">PHP</span>
-                                <span class="progress-completed">75%</span>
+                                <span class="progress-completed">80%</span>
+                            </div>
+                        </li>
+                        <li class="skills-items">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar3" role="progressbar" data-percent="75%" style="width:75%"></div>
+                                <span class="progress-style">PHP Framework Laravel</span>
+                                <span class="progress-completed">40%</span>
                             </div>
                         </li>
                     </ul>
                 </div>
+                <!-- portfolio -->
                 <div class="content-detail-portfolio-wrap">
                     <h1 class="portfolio-title">PORTFOLIO</h1>
                     <div class="portfolio-list">
                         <div class="portfolio-items">
-                            <a href="#" class="project-thumbnail" onclick="currentProject(1)">
+                            <a href="#" class="project-thumbnail" onclick="Project('appkeToan')">
                                 <img src="./assets/img/appketoan.png" alt="" class="portfolio-item-img">
                                 <div class="portfolio-description-wrapper">
                                     <div class="portfolio-description">
@@ -263,7 +307,7 @@
                     </div>
                     <div class="portfolio-list">
                         <div class="portfolio-items">
-                            <a href="#" class="project-thumbnail" onclick="currentProject(2)">
+                            <a href="#" class="project-thumbnail" onclick="Project('appMaketing')">
                                 <img src="./assets/img/appmarketing.png" alt="" class="portfolio-item-img">
                                 <div class="portfolio-description-wrapper">
                                     <div class="portfolio-description">
@@ -276,7 +320,7 @@
                     </div>
                     <div class="portfolio-list">
                         <div class="portfolio-items">
-                            <a href="#" class="project-thumbnail" onclick="currentProject(3)">
+                            <a href="#" class="project-thumbnail" onclick="Project('webSaleLaravel')">
                                 <img src="./assets/img/webSale_img.png" alt="" class="portfolio-item-img">
                                 <div class="portfolio-description-wrapper">
                                     <div class="portfolio-description">
@@ -289,7 +333,7 @@
                     </div>
                     <div class="portfolio-list">
                         <div class="portfolio-items">
-                            <a href="#" class="project-thumbnail" onclick="currentProject(4)">
+                            <a href="#" class="project-thumbnail" onclick="Project('webSaleMVC')">
                                 <img src="./assets/img/app_desktop.png" alt="" class="portfolio-item-img">
                                 <div class="portfolio-description-wrapper">
                                     <div class="portfolio-description">
@@ -302,7 +346,33 @@
                     </div>
                     <div class="portfolio-list">
                         <div class="portfolio-items">
-                            <a href="#" class="project-thumbnail" onclick="currentProject(5)">
+                            <a href="#" class="project-thumbnail" onclick="Project('webSale')">
+                                <img src="./assets/img/webSale_img.png" alt="" class="portfolio-item-img">
+                                <div class="portfolio-description-wrapper">
+                                    <div class="portfolio-description">
+                                        <h2 class="project-title">ZAY SHOP</h2>
+                                        <span class="see-more">Website Bán Hàng Online</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-list">
+                        <div class="portfolio-items">
+                            <a href="#" class="project-thumbnail" onclick="Project('appDesktop')">
+                                <img src="./assets/img/app_desktop.png" alt="" class="portfolio-item-img">
+                                <div class="portfolio-description-wrapper">
+                                    <div class="portfolio-description">
+                                        <h2 class="project-title">SOUND SLEEP</h2>
+                                        <span class="see-more">Ứng Dụng Desktop Giúp Bạn Có Một Giấc Ngủ Ngon</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-list">
+                        <div class="portfolio-items">
+                            <a href="#" class="project-thumbnail" onclick="Project('Database')">
                                 <img src="./assets/img/dtb.png" alt="" class="portfolio-item-img">
                                 <div class="portfolio-description-wrapper">
                                     <div class="portfolio-description">
@@ -364,21 +434,21 @@
     <div class="poftfolio-project-overlay" id="model">
         <a href="#" class="close"></a>
         <div class="portfolio-overlay-content">
-            <div class="column-30">
-                <img src="assets/img/appketoan.png" alt="" class="project-detail__img-demo" onclick="currentProject(1)">
+            <div class="column-30 sidebar-wrapper">
+                <!-- <img src="assets/img/appketoan.png" alt="" class="project-detail__img-demo" onclick="currentProject(1)">
                 <img src="assets/img/appmarketing.png" alt="" class="project-detail__img-demo" onclick="currentProject(2)">
                 <img src="assets/img/webSale_img.png" alt="" class="project-detail__img-demo" onclick="currentProject(3)">
                 <img src="assets/img/app_desktop.png" alt="" class="project-detail__img-demo" onclick="currentProject(4)">
-                <img src="assets/img/dtb.png" alt="" class="project-detail__img-demo" onclick="currentProject(5)">
+                <img src="assets/img/dtb.png" alt="" class="project-detail__img-demo" onclick="currentProject(5)"> -->
             </div>
             <div class="column-70">
-                <div class="poftfolio__img-main ">
-                    <img src="assets/img/appketoan.png" alt="" class="project-detail-img ">
+                <div class="poftfolio__img-main">
+                    <div class="flex-center"><img src="assets/img/appketoan.png" alt="" class="project-detail-img "></div>
                     <a href="https://github.com/nguyenhoangtuanvu/AppketoanVS2" class="portfolio-project__link">
                         OPEN SOURCE
                     </a>
-                </div>
-                <div class="poftfolio__img-main ">
+                </div>    
+                <!-- <div class="poftfolio__img-main ">
                     <img src="assets/img/appmarketing.png" alt="" class="project-detail-img ">
                     <a href="https://github.com/nguyenhoangtuanvu/AppMarketing" class="portfolio-project__link">
                         OPEN SOURCE
@@ -407,13 +477,13 @@
                     <a href="https://github.com/nguyenhoangtuanvu/Database" class="portfolio-project__link">
                         OPEN SOURCE
                     </a>
-                </div>
+                </div> -->
 
                 <!-- <p class="portfolio-project-description">
                     content
                 </p> -->
-                <a href="#" class="prev" onclick="plussImg(-1)"></a>
-                <a href="#" class="next" onclick="plussImg(1)"></a>
+                <a href="#" class="prev prev-btn"></a>
+                <a href="#" class="next next-btn"></a>
             </div>
         </div>
     </div>
@@ -424,6 +494,4 @@
 
 
     <script src="./assets/JS/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-</body>
 </html>

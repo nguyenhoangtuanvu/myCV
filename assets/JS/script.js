@@ -83,47 +83,170 @@ function openPortfolioOverlay() {
 }
 function closePortfolioOverlay() {
     document.getElementById('model').style.display = "none";
+    document.querySelector('.sidebar-wrapper').innerHTML = "";
+
 }
 
 var getOpenModelBtn = document.querySelectorAll('.project-thumbnail');
+var testimonialsBtn = document.querySelectorAll('.testimonials');
 var getCloseModelBtn = document.querySelector('.close');
+
+var sidebarWrapper = document.querySelector('.sidebar-wrapper');
+var preBtn = document.querySelector('.prev-btn');
+var nextBtn = document.querySelector('.next-btn');
+
+// portfolio open overlay
 for(var btn of getOpenModelBtn) {
     btn.addEventListener('click',openPortfolioOverlay);
 }
 getCloseModelBtn.addEventListener('click',closePortfolioOverlay);
 
-// model content
-var imgIndex = 1;
-showImg(imgIndex);
-
-function plussImg(n) {
-    showImg(imgIndex += n);
-}
-function currentProject(n) {
-    showImg(imgIndex = n);
-}
-function showImg(n) {
-    var i;
-    var project = document.getElementsByClassName('poftfolio__img-main');
-    var imgDemo = document.getElementsByClassName('project-detail__img-demo');
-    
-    if(imgIndex > project.length) {imgIndex = 1}
-    if(imgIndex < 1) {imgIndex = project.length}
-    for(i = 0; i< project.length; i++) {
-        project[i].style.display = "none";
+// testimonial open overlay
+for(var btn of testimonialsBtn) {
+    btn.onclick = (e) => { 
+        openPortfolioOverlay();
     }
-    // for(i = 0; i< imgDemo.length; i++) {
-    //     imgDemo[i].className = imgDemo[i].className.replace(" active", "");
-    // }
-    project[imgIndex-1].style.display = "block";
-    imgDemo[imgIndex-1].className += " imgDemo-active";
 }
 
-// google map
-// function googleMap() {
-//     var mapPop = {
-//         center:new google.maps.LatLng(51.508742,-0.120850),
-//         zoome:5,
-//     };
-//     var map = new google.maps.Map(document.getElementById('google-map'),mapPop)
-// }
+
+// list image of project
+var projects = [
+    {
+        name: 'appkeToan',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appmarketing.png',
+        ]
+    },
+    {
+        name: 'appMaketing',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appketoan.png'
+        ]
+    },
+    {
+        name: 'webSaleLaravel',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appketoan.png'
+        ]
+    },
+    {
+        name: 'webSaleMVC',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appketoan.png'
+        ]
+    },
+    {
+        name: 'webSale',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appketoan.png'
+        ]
+    },
+    {
+        name: 'appDesktop',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appketoan.png'
+        ]
+    },
+    {
+        name: 'Database',
+        image: [
+            'assets/img/appketoan.png',
+            'assets/img/appketoan.png'
+        ]
+    },
+    {
+        name: 'bangTotNghiep',
+        image: [
+            './assets/img/bằng cao đẳng.jpg',
+            './assets/img/bằng cao đẳng2.jpg'
+        ]
+    },
+    {
+        name: 'english',
+        image: [
+            './assets/img/chứng chỉ inglish.jpg',
+            './assets/img/chứng chỉ inglish2.jpg'
+        ]
+    },
+    {
+        name: 'ic3CF',
+        image: [
+            './assets/img/IC3 Key Applications  Global Standard 5.png'
+        ]
+    },
+    {
+        name: 'ic3KA',
+        image: [
+            './assets/img/IC3 Computing Fundamentals  Global Standard 5.png'
+        ]
+    },
+    
+];
+// show sidebar images
+var listPaths = [];
+var imgIndex = 0;
+
+function getPaths(name) {
+    projects.find((project) => {
+        if (project.name == name) {
+            return project.image;     
+        }
+    })
+}
+function Project(name) {
+    var project = projects.find((project) => {
+        if (project.name == name) {
+            return project;
+        }
+    })
+    listPaths = Object.values(project.image);
+    showSidebar(project.image);
+
+    showImg(listPaths[imgIndex]);
+}
+
+function showSidebar(Paths) {
+    var sidebarImagesHtml= '';
+    Array.from(Paths).forEach((element, index) => {
+        sidebarImagesHtml += `<img src="${element}" alt="" class="project-detail__img-demo"><br />`;       
+    });
+    sidebarWrapper.innerHTML = sidebarImagesHtml;
+
+    let sidebarImages = document.querySelectorAll('.project-detail__img-demo');
+    for (let i = 0; i < sidebarImages.length; i++) {
+        sidebarImages[i].onclick = function(e) {
+            let path = e.target.getAttribute('src');
+            showImg(path);
+        }
+    }
+}
+
+
+
+preBtn.onclick = () => {
+    changeIndex(-1);
+}
+nextBtn.onclick = () => {
+    changeIndex(+1);
+}
+
+function changeIndex(number) {
+    let imagePath = Object.values(listPaths);
+    imgIndex += number;
+    if (imgIndex > imagePath.length -1) { imgIndex = 0 }
+    if (imgIndex < 0) { imgIndex = imagePath.length -1}
+
+    showImg(imagePath[imgIndex]);
+}
+
+function showImg(image) {
+    console.log("image:", image)
+    var project = document.querySelector('.poftfolio__img-main');
+    project.querySelector('img').src = image;
+}
