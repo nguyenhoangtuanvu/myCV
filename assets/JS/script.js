@@ -115,49 +115,57 @@ var projects = [
         name: 'appkeToan',
         image: [
             'assets/img/appketoan.png',
-            'assets/img/appmarketing.png',
+            'assets/img/ketoan2.png',
+            'assets/img/ketoan3.png',
+            'assets/img/ketoan4.png',
+            'assets/img/ketoan5.png',
+            'assets/img/ketoan6.png'
         ]
     },
     {
         name: 'appMaketing',
         image: [
-            'assets/img/appketoan.png',
-            'assets/img/appketoan.png'
+            'assets/img/appmarketing.png',
+            'assets/img/marketing2.png',
+            'assets/img/marketing3.png',
+            'assets/img/marketing4.png'
         ]
     },
     {
         name: 'webSaleLaravel',
         image: [
-            'assets/img/appketoan.png',
-            'assets/img/appketoan.png'
+            'assets/img/appLaravel1.png',
+            'assets/img/appLaravel2.png',
+            'assets/img/appLaravel3.png',
+            'assets/img/appLaravel4.png'
         ]
     },
     {
         name: 'webSaleMVC',
         image: [
-            'assets/img/appketoan.png',
-            'assets/img/appketoan.png'
+            'assets/img/webMVC1.png',
+            'assets/img/webMVC2.png',
+            'assets/img/webMVC3.png',
+            'assets/img/webMVC4.png'
         ]
     },
     {
         name: 'webSale',
         image: [
-            'assets/img/appketoan.png',
+            'assets/img/webSale_img.png',
             'assets/img/appketoan.png'
         ]
     },
     {
         name: 'appDesktop',
         image: [
-            'assets/img/appketoan.png',
-            'assets/img/appketoan.png'
+            'assets/img/app_desktop.png'
         ]
     },
     {
         name: 'Database',
         image: [
-            'assets/img/appketoan.png',
-            'assets/img/appketoan.png'
+            'assets/img/dtb.png'
         ]
     },
     {
