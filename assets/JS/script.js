@@ -102,7 +102,6 @@ for(var btn of getOpenModelBtn) {
 getCloseModelBtn.onclick = function() {
     closePortfolioOverlay();
     imgIndex = 0;
-
 }
         
 
